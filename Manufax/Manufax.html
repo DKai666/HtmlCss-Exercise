@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../RESET.css">
+    <style>
+
+
+
+        @media screen and (min-width: 900px){
+            .connection{
+            background-color: #2a2a2c;
+            display:flex;
+            flex-wrap: wrap;
+            width: 100%;
+            color: white;
+            font-size: 8px;
+            justify-content:center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+
+
+        }
+
+        @media screen and (min-width: 1024px){
+        .connection{
+            background-color: #2a2a2c;
+            display:flex;
+            flex-wrap: wrap;
+            width: 100%;
+            color: white;
+            font-size: 23px;
+            justify-content:center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .connection p{
+            margin-right: 30px;
+            margin-left: 20px;
+        }
+        .connection a{
+            text-decoration: none;
+            color: white;
+            margin: 0px 5px;
+        }
+        .fbig{
+            display: flex;
+            margin-left: 600px;
+
+        }
+        .fbig a:hover{
+            color: #2ac5f4;
+        }
+        .top-link{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            justify-content: center;
+            z-index: 1;
+            margin-top: 20px;
+        }
+        .logo-link{
+            padding-top: 30px;
+        }
+        .Menu{
+            margin: 60px 15%;
+        }
+        .Menu a{
+            font-size: 16px;
+            color: white;
+            margin: 0px 15px;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        .Menu a:hover{
+            color: #2ac5f4;
+        }
+        .search{
+            font-size: 20px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .theme-background img{
+            -webkit-filter: brightness(0.5);
+            width: 100%;
+        }
+        .theme-background{
+            position: relative;
+        }
+        .theme-background h1{
+            position: absolute;
+            top: 40%;
+            font-size: 140px;
+            font-weight: bolder;
+            color: white;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+        }
+        .theme-background p{
+            position: absolute;
+            top: 57%;
+            font-size: 40px;
+            color: white;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+        }
+        .theme-background a{
+            width: 350px;
+            position: absolute;
+            top: 66%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            background-color: #2ac5f4;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border-radius: 3px;
+        }
+        .theme-background a:hover{
+            background-color: black;
+        }
+        .OUR-SERVICES{
+            width: 100%;
+            margin: auto;
+            position: relative;
+            top: 185px;
+            margin-bottom: 300px;
+        }
+        .OUR-SERVICES h1{
+            width: 100%;
+            text-align: center;
+            font-size: 45px;
+            font-weight: bolder;
+        }
+        .OUR-SERVICES h1::before{
+            content: '';
+            background-color: #2ac5f4;
+            position: absolute;
+            top: -50px;
+            width: 5%;
+            height: 0.7%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .SERVICES{
+            width: 70%;
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .SERVICES div img{
+            height: 40%;
+            width: 33%;
+        }
+        .SERVICES div div{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 25px;
+        }        
+        .SERVICES div{
+            margin-top: 70px;
+            width: 32%;
+            height: 100%;
+            display: flex;
+        }
+        .SERVICES div div h2{
+            font-size: 22px;
+            font-weight: 800;
+        }
+        .SERVICES div div p{
+            width: 90%;
+            margin-top: 20px;
+            font-size: 22px;
+            color: rgb(156, 156, 156);
+            line-height: 35px;
+        }
+        .OUR-HISTORY{
+            display: flex;
+            justify-content: center;
+            background-color: #f6f6f7;
+        }
+        .OUR-HISTORY img{
+            margin: 120px 25px;
+            width: 35%;
+            height: 35%;
+        }
+        .history-txt{
+            width: 35%;   
+            margin: 200px 25px;
+            position: relative;
+        }
+        .history-txt h1{
+            font-size: 40px;
+            font-weight: bolder;
+            margin-bottom: 70px;
+        }
+        .history-txt h1::before{
+            content: '';
+            background-color: #2ac5f4;
+            position: absolute;
+            top: -50px;
+            width: 9%;
+            height: 0.7%;
+            left: 0;
+        }
+        .history-txt h2{
+            margin: 30px 0px;
+            font-size: 30px;
+            color: rgb(117, 117, 117);
+            line-height: 45px;
+        }
+        .history-txt p{
+            font-size: 25px;
+            color: rgb(161, 161, 161);
+            line-height: 35px;
+        }
+        .history-txt a{
+            width: 200px;
+            position: absolute;
+            bottom: -70px;
+            left: 0;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            background-color: #2ac5f4;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border-radius: 3px;
+        }
+        .history-txt a:hover{
+            background-color: black;
+        }
+        .pic{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .pic div{
+            width: 25%;
+            position: relative;
+        }
+        .pic div img{
+            width:  100%;
+            -webkit-filter: brightness(0.6);
+            height: 400px;
+            vertical-align: top;
+        }
+        .pic p{
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 50%;
+            margin: auto;
+            color: white;
+            font-size: 28px;
+        }
+        .RECENT-NEWS{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            top: 185px;
+            margin-bottom: 300px;
+        }
+        .RECENT-NEWS div{
+            width: 31.3%;
+            margin: 70px 1%;
+            position: relative;
+        }
+        .RECENT-NEWS div img{
+            width: 100%;
+        }
+        .RECENT-NEWS h1{
+            width: 100%;
+            text-align: center;
+            font-size: 45px;
+            font-weight: bolder;
+        }
+        .RECENT-NEWS h1::before{
+            content: '';
+            background-color: #2ac5f4;
+            position: absolute;
+            top: -50px;
+            width: 5%;
+            height: 0.7%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .RECENT-NEWS div a:nth-child(2){
+            font-size:25px;
+            color: rgb(117, 117, 117);
+            position: relative;
+            top: 30px;
+            font-style: normal;
+        }
+        .RECENT-NEWS div a:nth-child(4)::before{
+            content: 'Posted by ';
+            font-style: oblique;
+            color:rgb(161, 161, 161);
+        }
+        .RECENT-NEWS div a{
+            margin: 3000px 000px;
+            text-decoration: none;
+            color:#2ac5f4 ;
+            font-size: 20px;
+            position: relative;
+            top: 60px;
+            font-style: oblique;
+        }
+        .RECENT-NEWS div p{
+            margin-top: 20px;
+            color: rgb(161, 161, 161);
+            font-size: 23px;
+            position: relative;
+            top: 60px;
+        }
+        .RECENT-NEWS .see-all{
+            width: 200px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            background-color: #2ac5f4;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border-radius: 3px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 120px;
+            position: relative;
+        }
+        .see-all:hover{
+            background-color: black;
+        }
+        .information{
+            margin-top: 430px;
+            background-color: #333333;
+            display: flex;
+            justify-content: center;
+        }
+        .information div{
+            width: 15.5%;
+            margin: 170px 1.5%;
+        }
+        .information div p{
+            font-size: 25px;
+            color: #888888;
+            line-height: 30px;
+        }
+        .information div h3{
+            color: white;
+            font-size: 28px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+        .navigation a{
+            color: #2ac5f4;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .navigation a:hover{
+            color: white;
+        }
+        .comments a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 10px 0px; 
+            line-height: 30px;
+        }
+        .comments a:hover{
+            color: #2ac5f4;
+        }
+        .comments a:nth-child(4)::before,.comments a:nth-child(9)::before{
+            content: 'Posted by ';
+            color: #888888;
+            font-style: oblique;
+        }
+        .comments a:nth-child(4),.comments a:nth-child(9){
+            color: #888888;
+            font-style: oblique;
+        }
+        .comments a:nth-child(4):hover,.comments a:nth-child(9):hover{
+            color: #2ac5f4;
+        }
+        .contacts a{
+            color:#2ac5f4;
+            font-size: 25px;
+        }
+        .contacts a:hover{
+            color: white;
+        }
+        .botton{
+            
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #272727;
+        }
+        .botton p{
+            color: #888888;
+        }
+        .author{
+            position: relative;
+            margin-right: 550px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .botton a{
+            color: white;
+            text-decoration: none;
+        }
+        .fb--{
+            margin-top: 20px; 
+        }    
+        .author a{
+            position: absolute;
+            right: -60px;
+            bottom: 20px;
+            color: #398ffc;
+            text-decoration: none;
+        }
+        .author a:hover{
+            color: #888888;
+        }
+        .fb-- a:hover{
+            color: #2ac5f4;
+        }
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="connection">
+        <p>Address: 4578 Marmora Road, Glasgow, D04 89GR</p>
+        <a href="tel:(800) 123-0045;(800) 123-0046">Phones: (800) 123-0045; (800) 123-0046</a>
+        <div class="fbig">
+            <a href="#">fb</a>
+            <a href="#">tw</a>
+            <a href="#">?</a>
+            <a href="#">yt</a>
+            <a href="#">?</a>
+            <a href="#">ig</a>
+        </div>
+    </div>
+    <div class="top-link">
+        <a href="#"class="logo-link"><img src="asset 0.png" alt=""></a>
+        <div class="Menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PROIECTS</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACTS</a>
+        </div>
+    <button class="search">🔎</button>
+    </div>
+    <div class="theme-background">
+        <img src="asset 1.png" alt="">
+        <h1>CONSTRUCTION</h1>
+        <p>SEE HOW A 10-STOWER'S BUILT, IN A TIME-LAPSE!</p>
+        <a href="#">SEE OUR RECENT PROJECTS</a>
+    </div>
+    <div class="OUR-SERVICES">
+        <h1>OUR SERVICES</h1>
+        <div class="SERVICES">
+            <div class="bim">
+                <img src="asset 17.png" alt="">
+                <div class="bim-txt">
+                    <h2>BUILDING INFORMATION MODELING</h2>
+                    <p>Oftentimes physical and functional essence of any construction project needs to be represented digitally, in a 3D model format. In...</p>
+                </div>
+            </div>
+            <div class="construction">
+                <img src="asset 18.png" alt="">
+                <div class="construction-txt">
+                    <h2>CONSTRUCTION SERVICES</h2>
+                    <p>Our customers love the pace/quality tempo that we show during each of the principal construction processes! We're comfortable with any...</p>
+                </div>
+            </div>
+            <div class="pre-construction">
+                <img src="asset 19.png" alt="">
+                <div class="pre-construction-txt">
+                    <h2>PRE-CONSTRUCTION SERVICES</h2>
+                    <p>We take our time on initial planning before any construction begins, to balance all the financial and efficiency issues beforehand.This...</p>
+                </div>
+            </div>
+            <div class="design">
+                <img src="asset 20.png" alt="">
+                <div class="design-txt">
+                    <h2>DESIGN-BUILD</h2>
+                    <p>If a project is not too complex, we may hire a designer-builder type of contractor, to make the longevity of...</p>
+                </div>
+            </div>
+            <div class="C.T-Managemenrt">
+                <img src="asset 21.png" alt="">
+                <div class="C T-Managemenrt-txt">
+                    <h2>CONSTRUCTION MANAGEMENT</h2>
+                    <p>Construction project management is essential. We're using the most time and iterations efficient life cycles for that.As you may know,...</p>
+                </div>
+            </div>
+            <div class="contracting">
+                <img src="asset 22.png" alt="">
+                <div class="contracting-txt">
+                    <h2>GENERAL CONTRACTING</h2>
+                    <p>We have a long list of professional contractors, whom our engineers and architects enjoy to work with on a majority...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="OUR-HISTORY">
+        <div class="history-txt">
+            <h1>OUR HISTORY</h1>
+            <h2>OUR CONSTRUCTION COMPANY HAS BEEN FOUNDED 10 YEARS AGO, AT THE VERY PEAK OF THE BUILDING FRENZY IN THE US…</h2>
+            <p>Since then we’ve built hundreds of commercial, government and private buildings and facilities. It may not sound like a lot, but if you estimate the manpower, working hours, materials, planning and correlating that were all involved in completing each separate project, then our productivity is immense!</p>
+            <a href="#">READ MORE</a>
+        </div>
+        <img src="asset 4.png" alt="">
+    </div>
+    <div class="pic">
+        <div class="commercial">
+        <img src="asset 9.jpeg" alt="">
+        <p>COMMERCIAL</p>
+        </div>
+        <div class="cutural">
+        <img src="asset 10.jpeg" alt="">
+        <p>CULTURAL/LIFESTYLE</p>
+        </div>
+        <div class="data">
+        <img src="asset 11.jpeg" alt="">
+        <p>DATA/TECHNOLOGY</p>
+        </div>
+        <div class="education">
+        <img src="asset 12.jpeg" alt="">
+        <p>EDUCATION</p>
+        </div>
+        <div class="government">
+        <img src="asset 13.jpeg" alt="">
+        <p>GOVERNMENT/MILITARY</p>
+        </div>
+        <div class="healthcare">
+        <img src="asset 14.jpeg" alt="">
+        <p>HEALTHCARE</p>
+        </div>
+        <div class="manufacturing">
+        <img src="asset 15.jpeg" alt="">
+        <p>MANUFACTURING/INDUSTRIAL</p>
+        </div>
+        <div class="warehouse">
+        <img src="asset 16.jpeg" alt="">
+        <p>WAREHOUSE/LOGISTICS</p>
+        </div>
+    </div>
+    <div class="RECENT-NEWS">
+        <h1>RECENT NEWS</h1>
+        <div class="future">
+            <img src="asset 5.jpeg" alt="">
+            <a href="#">FUTURE PROOFING HOSPITALS</a><br>
+            <a href="#"class="date">adminDecember 7, 2018</a><br>
+            <p>By improving the physical layout of hospitals and medical facilities, we can enhance and increase safety mechanisms, improve care, and…</p>
+        </div>
+        <div class="bike-parts">
+            <img src="asset 6.jpeg" alt="">
+            <a href="#"class="date">BIKE PARTS WAREHOUSE, DE</a><br>
+            <a href="#">adminDecember 7, 2018</a><br>
+            <p>Delaware proved to be a very friendly place to work at… While invited there for completing a mid-sized warehouse for…</p>
+        </div>
+        <div class="joy-hotel">
+            <img src="asset 7.jpeg" alt="">
+            <a href="#"class="date">JOY HOTEL & CASINO</a><br>
+            <a href="#"> adminDecember 7, 2018</a><br>
+            <p>This hotel & casino complex is our most recent completed building… The whole structure that took us 6 months to…</p>
+        </div>
+        <a href="#"class="see-all">SEE ALL NEWS</a>
+    </div>
+    <div class="information">
+        <div class="Introduction">
+            <a href="#"class="infor-logo"><img src="asset 8.png" alt=""></a>
+            <p>Construction’s core values have been shaped over more than 10 years of delivering the finest construction services to our clients. They stood to the test of time and these principles remain our bedrock lynchpins. We never tried to cut on either quality, the pace of work or any other construction aspect. We stay true to our full promise of efficiency!</p>
+        </div>
+        <div class="navigation">
+            <h3>NAVIGATION</h3>
+            <a href="#">Home</a><br><br>
+            <a href="#">About</a><br><br>
+            <a href="#">Services</a><br><br>
+            <a href="#">Proiects</a><br><br>
+            <a href="#">Blog</a><br><br>
+            <a href="#">Contacts</a><br><br>
+        </div>
+        <div class="comments">                              <h3>RECENT COMMENTS</h3>               
+            <a href=""class="h">The art and science of color planning for performance requirements</a><br>
+            <a href=""class="amdin">admin</a><br><br>
+            <a href=""class="h">Future proofing hospitals</a><br>
+            <a href=""class="h">admin</a>
+        </div>
+        <div class="contacts">
+            <h3>CONTACTS</h3>
+            <p>Address: 4578 Marmora Road, Glasgow, D04 89GR</p><br><br>
+            <p>Phones:</p><a href="tel:(800) 123-0045;(800) 123-0046">(800) 123-0045; (800) 123-0046</a><br><br>
+            <p>Email:</p><a href="email:info@demolink.org">info@demolink.org</a>
+        </div>
+    </div>
+    <div class="botton">
+        <div class="author">
+            <p>Manufax Theme © 2019. | Theme design by</p>
+            <a href="#">Zemez</a>
+        </div>
+        <div class="fb--">
+            <a href="#">fb</a>
+            <a href="#">tw</a>
+            <a href="#">?</a>
+            <a href="#">yt</a>
+            <a href="#">?</a>
+            <a href="#">ig</a>
+        </div>
+    </div>
+</body>
+</html>

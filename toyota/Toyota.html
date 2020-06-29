@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNGA新世代造車工藝</title>
+    <link rel="stylesheet" href="../RESET.css">
+    <style>
+        .blacklink{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            justify-content:space-around;
+            font-size: 0;
+            background-color: black;
+        }
+        .blacklink a{
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            height: 50px;
+            padding-top: 25px;  
+            background-color: black;  
+            z-index: 5;  
+            border-bottom: 2px solid black;
+            margin: 0px 5px;
+        }
+        .blacklink a:hover{
+            border-bottom: 2px solid red;
+        }
+        .grage{
+            background-color: blueviolet;
+            display: flex;
+            position: relative;
+            margin-bottom: 90px;
+        }
+        .grage img{
+            width: 100%;
+
+        }
+        .style img{
+            position: absolute;
+        }
+        .style .a{
+            position: absolute;
+            width: 60%;
+            height: 95%;
+            top: 8%;
+            left: 21%;
+        }
+        .style .b{
+            position: absolute;
+            width: 67%;
+            height: 140%;
+            top: -15%;
+            left: 17%;
+        }
+        .style .c{
+            position: absolute;
+            width: 90%;
+            height: 180%;
+            top: -35%;
+            left: 5%;
+        }
+        .style .d{
+            position: absolute;
+            width: 45%;
+            height: 55%;
+            top: -10%;
+            left: 26%;
+        }
+        .style .e{
+            position: absolute;
+            width: 42%;
+            height: 45%;
+            top: 41%;
+            left: 27%;
+        }
+        .style .f{
+            position: absolute;
+            width: 5%;
+            height: 11%;
+            top: 48%;
+            left: 52%;
+        }
+        .style .g{
+            position: absolute;
+            width: 5%;
+            height: 11%;
+            top: 54%;
+            left: 30%;
+        }
+        .style .h{
+            position: absolute;
+            width: 10%;
+            height: 5%;
+            top: 60%;
+            left: 53%;
+        }
+        .style .i{
+            position: absolute;
+            width: 10%;
+            height: 5%;
+            top: 67%;
+            left: 30%;
+        }
+        .style .j{
+            position: absolute;
+            width: 20%;
+            height: 28%;
+            top: 67%;
+            left: 52%;
+        }
+        .style .k{
+            position: absolute;
+            width: 26%;
+            height: 26%;
+            bottom: 0;
+            left: 29%;
+        }
+        h1{
+            width: 960px;
+            font-size: 40px;
+            margin: auto;
+            text-align: center;
+            font-weight: bolder;
+            position: relative;
+        }
+        h1::after{
+            content:'';
+            background-color: black;
+            width: 40px;
+            display: block;
+            position: absolute;
+            left: 48%;
+            top:  60px;
+            bottom: -25px;
+        }
+        .link{
+            width: 960px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            justify-content:space-between;
+            font-size: 0;
+            margin-top: 80px;
+        }
+        .link a{
+            font-size: 19px;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            border: 1px dotted grey;
+            border-bottom: 1px solid   rgb(194, 0, 0);
+            width: 180px;
+            height: 30px;
+            text-align: center;
+            padding-top: 7px;
+            z-index: 1;
+        }
+        .link a:hover{
+            background-color:rgb(194, 0, 0);
+            color: white;
+        }
+        .block{
+            width: 960px;
+            margin: auto;
+        }
+        .pic{
+            justify-content: flex-start;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 100px 0px;
+            flex-shrink:1;
+        }
+        .num{
+            width: 355px;
+            height: 388px;
+            z-index: 1;
+        }
+        .do{
+            width: 682px;
+            height: 275px;
+            z-index: 1;
+            margin-left: 45px;
+            margin-top: -28px;
+        }
+        .aaa{
+            width: 695px;
+            height: 430px;
+            position: relative;
+            background-color: coral;
+            margin-top: 137px;
+            margin-left: -170px;
+        }
+        .car{
+            width: 100%;
+            height: 100%;
+        }
+        .back{
+            width: 439px;
+            height: 290px;
+            position: absolute;
+            top: -100px;
+            right: -80px;
+            opacity: 0.2;
+        }
+        .play{
+            width: 57px;
+            height: 36px;
+            position: absolute;
+            top: 50%;
+            right: -10px;
+        }
+        .block>.pic:nth-child(even){
+            flex-direction: row-reverse;
+        }
+        .block>.pic:nth-child(even) .aaa{
+            margin-right: -100px;
+        }
+        .block>.pic:nth-child(even) .play{
+            left: -10px;
+        }
+    </style>
+</head>
+<body>
+<div class="lable">
+    <a href="#"><img src="asset 0.png" alt=""></a>
+    <div class="toplink"></div>
+    <a href="#">車款展示間</a>
+    <a href="#">購車服務</a>
+    <a href="#">品牌新知</a>
+    <a href="#">安全/科技</a>
+    <a href="#">車主專區</a>
+    </div>
+    <div class="fbjg">
+    <a href="#"><img src="asset 38.png" alt=""></a>
+    <a href="#"><img src="asset 39.png" alt=""></a>
+    <a href="#"><img src="asset 40.png" alt=""></a>
+    <a href="#"><img src="asset 41.png" alt=""></a>
+    </div>
+</div>
+
+    <div class="blacklink">
+        <a href="#">核心理念</a>
+        <a href="#">五大優勢</a>
+        <a href="#">46 THINGS</a>
+        <a href="#">影片演示</a>
+        <a href="#">搭載車款</a>
+    </div>
+
+<div class="grage">
+    <img src="asset 45.png" alt="">
+    <div class="style">
+        <img class="a" src="asset 49.png" alt="">
+        <img class="b" src="asset 46.png" alt="">
+        <img class="c" src="asset 47.png" alt="">
+        <img class="d" src="asset 50.png" alt="">
+        <img class="e" src="asset 48.png" alt="">
+        <img class="f" src="asset 53.png" alt="">
+        <img class="g" src="asset 53.png" alt="">
+        <img class="h" src="asset 54.png" alt="">
+        <img class="i" src="asset 55.png" alt="">
+        <img class="j" src="asset 51.png" alt="">
+        <img class="k" src="asset 52.png" alt="">
+    </div>
+</div>
+
+    <h1><strong>五大優勢</strong></h1>
+<div class="link">
+    <a href="#">操控樂趣</a>
+    <a href="#">安全守護</a>
+    <a href="#">乘坐舒適</a>
+    <a href="#">以人為本</a>
+    <a href="#">引以為傲</a>
+</div>
+    <div class="block">
+        <div class="pic">
+            <img class="num" src="asset 60.png" alt="">
+            <div class="aaa">
+                     <img class="car" src="asset 58.png" alt="">
+                        <img class="back" src="asset 42.png" alt="">                   
+                        <img class="play" src="asset 59.png" alt="">
+            </div>
+            <img class="do" src="asset 61.png" alt="">
+        </div>
+        
+        <div class="pic">
+            <img class="num" src="asset 63.png" alt="">
+            <div class="aaa">
+                     <img class="car" src="asset 62.png" alt=>
+                     <img class="back" src="asset 42.png" alt="">                   
+                     <img class="play" src="asset 59.png" alt="">
+            </div>
+            <img class="do" src="asset 64.png" alt="">
+        </div>
+        
+        <div class="pic">
+            <img class="num" src="asset 66.png" alt="">
+            <div class="aaa">
+                     <img class="car" src="asset 65.png" alt=>
+                     <img class="back" src="asset 42.png" alt="">                   
+                     <img class="play" src="asset 59.png" alt="">
+            </div>
+            <img class="do" src="asset 67.png" alt="">
+        </div>
+        
+        <div class="pic">
+            <img class="num" src="asset 69.png" alt="">
+            <div class="aaa">
+                     <img class="car" src="asset 68.png" alt=>
+                     <img class="back" src="asset 42.png" alt="">                   
+                     <img class="play" src="asset 59.png" alt="">
+            </div>
+            <img class="do" src="asset 70.png" alt="">
+        </div>
+        
+        <div class="pic">
+            <img class="num" src="asset 72.png" alt="">
+            <div class="aaa">
+                     <img class="car" src="asset 71.png" alt=>
+                     <img class="back" src="asset 42.png" alt="">                   
+                     <img class="play" src="asset 59.png" alt="">
+            </div>
+            <img class="do" src="asset 73.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

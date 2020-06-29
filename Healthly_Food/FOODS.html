@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healtly Food</title>
+    <link rel="stylesheet" href="../RESET.css">
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .lable{
+            border-bottom: 1px solid rgb(231, 231, 231);
+            display: flex;
+            justify-content: space-around;
+            padding-top: 35px;
+            height: 40px;
+            
+        }
+        .myaccount a{
+            
+            padding-right: 100px;
+        }
+        .search a{
+            padding: 7px;
+        }
+        .search a:hover{
+            color: #ffe605;
+        }
+        .secondlable{
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            z-index: 2;
+        }
+        .kardone{
+            margin-top: 65px;
+            position: relative;
+        }
+        .kardone a::after{
+            position: absolute;
+            content: 'HEALTLY   FOOD';
+            top: 50px;
+            left: 120px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .kardone:hover a::after{
+            color: #ffe605;
+        }
+        .kardone a{
+            font-size: 40px;
+            padding-left: 120px;
+        }
+        .HOME{
+            margin-right: 120px;
+            margin-top: 95px;
+        }
+        .HOME a{
+            margin-right: 10px;
+            font-weight: 800;
+        }
+        .HOME a:hover a{
+            border: 2px solid black;
+        }
+        .fresh{
+            display: flex;
+        }
+        .freshand{
+            width: 100%;
+            font-size: 100px;
+            padding-top: 200px;
+            padding-left: 65px;
+            position: relative;
+        }
+        .freshand p::after{
+            content: 'ALL YEAR ROUND!';
+            bottom: 250px ;
+            position: absolute;
+            left: 60px;
+            font-size:60px;
+            color: #ffe605;
+        }
+        .freshand button{
+            margin-top: 120px;
+            width: 200px;
+            height: 60px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            border: 0px;
+            border-radius: 5px;
+        }
+        .freshand button:hover{
+            background-color: #ffe605;
+            color: black;
+        }    
+        .cartoon{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .cartoonp{
+            border: 0px solid black;
+            margin-top: 20px;
+            margin: 10px;
+            height: 250px;
+        }
+        .cartoonp img{
+            width: 250px;
+        }
+        .cartoonp:hover{
+            box-shadow:black 0px 0px 15px 0.1px; 
+        }
+        .cartoonp:hover p{
+            color: #ffe605; 
+        }
+        .cartoonp p {
+            padding-top: 20px;
+            margin-top: -100px;
+            text-align: center;
+            font-size: 35px;
+        }
+        .bestqualiyt{
+            display: flex;
+            justify-content:center;
+
+        }
+        .purple{
+            margin: 90px 10px;
+            position: relative;
+        }
+        .purple p{
+            font-size: 37px;
+            color: white;
+            position: absolute;
+            bottom: 185px;
+            left: 65px;
+            font-weight: bolder;
+        }
+        .purple a{
+            font-size: 23px;
+            color: white;
+            position: absolute;
+            left: 65px;
+            bottom: 130px;
+            text-decoration: underline;
+        }
+        .group{
+            margin: 90px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 30%;
+        }
+        .pink{
+            position: relative;
+        }
+        .pink p{
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            bottom: 80px;
+            left: 25px;
+        }
+        .pink a{
+            position: absolute;
+            color: white;
+            font-size: 23px;
+            bottom: 30px;
+            left: 25px;
+            text-decoration: underline;
+        }
+        .water{
+            margin-top: 27px;
+            position: relative;
+        }
+        .water p{
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            bottom: 220px;
+            left: 25px;
+        }
+        .water p::after{
+            width: 400px;
+            position: absolute;
+            content: 'Dont miss your chance to be the first!';
+            font-size: 17px;
+            top: 60px;
+            left: 0px;
+        }
+        .water a{
+            position: absolute;
+            color: white;
+            font-size: 23px;
+            bottom: 130px;
+            left: 25px;
+            text-decoration: underline;
+        }
+        .title{
+            margin: 40px 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .title .H1{
+            font-size: 0;
+            margin-left: 210px;  
+        }
+        .title .H2{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .title .but{
+            margin-right: 150px;
+        }
+        .title button{
+            margin-right: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+            background-color: white;
+            border: 1px solid rgb(207, 207, 207);
+        }
+        .title button:hover{
+            background-color: #ffe605;
+            color: white;
+        }
+        .Products{
+            display: flex;
+            justify-content: center;
+        }
+        .Products1,.Products2,.Products3,.Products4{
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.11);
+            margin: 15px;
+            width: 268px;
+            height: 250px;
+        }
+        .Products button{
+            margin: 15px 1px;
+            border-radius: 3px;
+            border: 1px solid black;
+            background-color: white;
+            font-size: 16px;
+            padding: 5px
+        }
+        .Products button:hover{
+            background-color: #ffe605;
+        }
+        .Products img{
+         margin-bottom: 15px;
+        }
+        .Products a{
+            font-size: 18px;
+        }
+        .Products a:hover{
+            color: #ffe605;
+        }
+        .Products p{
+            padding-top: 15px;
+            font-size: 25px;
+        }
+        .Products1 p::before{
+            content: '$26.00 ';
+            color: rgb(136, 136, 136);
+            text-decoration: line-through;
+        }
+        .Products4 p::before{
+            content: '$33.00 ';
+            color: rgb(136, 136, 136);
+            text-decoration: line-through;
+        }
+        .off{
+            margin-top: 300px;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-bottom: 200px;
+        }
+        .percent20{
+            box-shadow:black 0px 0px 15px 0.1px;
+            width: 600px;
+            background-color: white;
+            text-align: center;
+            padding-top: 120px;
+            font-size: 90px;
+            z-index: 1;
+            position: relative;
+            left: 150px;
+        }
+        .percent20 button{
+            border: none;
+            width: 130px;
+            height: 40px;
+            background-color: #ffe605;
+        }
+        .berry{
+            position: relative;
+            top:80px;
+            right: 160px;
+        }
+        .onsale{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .orange{
+            position: relative;
+        }
+        .orange p{
+            font-size: 37px;
+            color: white;
+            position: absolute;
+            bottom: 120px;
+            left: 65px;
+            font-weight: bolder;
+        }
+        .orange a{
+            font-size: 23px;
+            color: white;
+            position: absolute;
+            left: 65px;
+            bottom: 70px;
+            text-decoration: underline;
+        }
+        .sale{
+            width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .sale h1{
+            padding-top: 40px;
+            font-size: 25px;
+            width: 600px;
+            display: block;
+            text-align: center;
+        }
+        .Products01,.Products02,.Products03,.Products04{
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.11);
+            margin: 0px 15px;
+            width: 268px;
+            height: 270px;
+        }
+        .sale img{
+            margin-bottom: 20px;
+        }
+        .sale a{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .sale a:hover{
+            color: #ffe605;
+        }
+        .sale button{
+            margin: 15px 1px;
+            border-radius: 3px;
+            border: 1px solid black;
+            background-color: white;
+            font-size: 16px;
+            padding: 5px;
+        }
+        .Products04 .unbuy{
+            opacity: 0.2;
+        }
+        .sale button:hover{
+            background-color: #ffe605;
+        }
+        .sale p{
+            padding-top: 15px;
+            font-size: 25px;
+        }
+        .FeaturedPosts{
+        margin-top: 220px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        .poststitle{
+            width: 100%;
+            height: 100px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .blue{
+            margin: 0px 25px;
+            width: 350px;
+        }
+        .yellow{
+            margin: 0px 25px;
+            width: 350px;
+        }
+        .green{
+            margin: 0px 25px;
+            width: 350px;
+        }
+        .FeaturedPosts a{
+            font-size: 20px;
+        }
+        .FeaturedPosts a:hover{
+            color: #ffe605;
+        }
+        .FeaturedPosts p{
+            margin: 10px 0px;
+        }
+        .Infor{
+            display: flex;
+            justify-content: center;
+            background-color:rgb(238, 238, 238);
+            height: 480px;
+            position: relative;
+        }
+        .Infor h1{
+            font-size: 25px;
+            margin: 10px 0px;
+        }
+        .Information{
+            margin: 80px 75px;
+        }
+        .myacc{
+            margin: 80px 75px;
+        }
+        .ourshop{
+            margin: 80px 75px;
+        }
+        .Newsletter{
+            margin: 80px 75px;
+        }
+        .Infor a:hover{
+            color: #ffe605;;
+        }
+        .last{
+            text-align: center;
+            height: 40px;
+            background-color: #ffe605;;;
+        }
+    </style>
+</head>
+<body>
+    <div class="lable">
+        <div class="myaccount">
+        <a href="#">My account</a>
+        </div>
+        <div class="search">
+        <a href="#">🔎</a>
+        <a href="#">❤</a>
+        <a href="#">🛒</a>
+        <a href="#">USD</a>
+        </div>
+    </div>
+
+    <div class="sticky">
+        <div class="secondlable">
+            
+            <div class="kardone"><a href="#">KARDONE</a></div>
+            <div class="HOME"><a href="#"></a>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">COLLECTION</a>
+            <a href="#">BLOG</a>
+            <a href="#">SALE</a>
+            <a href="#">CONTACT US</a></div>
+        </div>
+        <div class="fresh">
+            <div class="run">
+                <img src="asset 14.png" alt=""></div>
+            <div class="freshand">
+                <p> Fresh and<br>Delicious</p>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div class="cartoon">
+            <div class="cartoonp">
+            <img src="asset 51.png" alt="">
+            <p>Fresh Fruit</p>
+            </div>
+            <div class="cartoonp">
+            <img src="asset 52.png" alt="">
+            <p>Veggies</p>
+            </div>
+            <div class="cartoonp">
+            <img src="asset 53.png" alt="">
+            <p>Fish</p>
+            </div>
+            <div class="cartoonp">
+            <img src="asset 54.png" alt="">
+            <p>Nut & Seeds</p>
+            </div>
+            <div class="cartoonp">
+            <img src="asset 55.png" alt="">
+            <p>Bread</p>
+            </div>
+            <div class="cartoonp">
+            <img src="asset 56.png" alt="">
+            <p>Dairy</p>
+            </div>
+        </div>
+        <div class="bestqualiyt">
+            <div class="purple">
+                <img src="asset 57.png" alt="">
+                <p>Best Quality Products</p>
+                <a href="#">Shop now</a>
+            </div>
+            <div class="group">
+                <div class="pink">
+                <img src="asset 58.png" alt="">
+                <p>Hot Deals:<br>CRAZY PRICE $2.99</p>
+                <a href="#">Shop now</a>
+                </div>
+                <div class="water">
+                <img src="asset 59.png" alt="">
+                <p>HURRY UP!</p>
+                <a href="#">Shop now</a>
+                </div>
+            </div>            
+        </div>
+        <div class="FeaturedProducts">
+            <div class="title">
+                <div class="H1"><h1>space</h1></div>
+                <div class="H2"><h2>Featured Products</h2></div>
+                    <div class="but">
+                        <button> < </button>
+                        <button> > </button>
+                    </div>
+            </div>
+            <div class="Products">
+                <div class="Products1">
+                    <img src="asset 9.png" alt="">
+                    <a href="#">P28 Foods Formulated...</a>
+                    <p>$20.00</p>
+                    <button>🛒CHOOSE VARIANT</button>
+                    <button>👁</button>
+                    <button>❤</button>
+                </div>
+                <div class="Products2">
+                    <img src="asset 10.png" alt="">
+                    <a href="#">P28 Foods Formulated...</a>
+                    <p>$29.00 - $36.00</p>
+                    <button>🛒CHOOSE VARIANT</button>
+                    <button>👁</button>
+                    <button>❤</button>
+                </div>
+                <div class="Products3">
+                    <img src="asset 11.png" alt="">
+                    <a href="#">KIND Nuts & Spics,...</a>
+                    <p>$12.00 - $30.00</p>
+                    <button>🛒CHOOSE VARIANT</button>
+                    <button>👁</button>
+                    <button>❤</button>
+                </div>
+                <div class="Products4">
+                    <img src="asset 12.png" alt="">
+                    <a href="#">Justin's Nut Butter...</a>
+                    <p>$22.00</p>
+                    <button>🛒CHOOSE VARIANT</button>
+                    <button>👁</button>
+                    <button>❤</button>
+                </div>            
+            </div>
+        </div>
+        <div class="off">
+            <div class="percent20">
+                <p>20% OFF<br>Fresh Berries</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="berry"><img src="asset 40.png" alt=""></div>
+        </div>
+        <div class="onsale">
+            <div class="orange">
+                <img src="asset 60.png" alt="">
+                <p>Looking for something<br>special?</p>
+                <a href="#">Shop now</a>
+            </div>
+            <div class="sale">
+                <h1>On Sale</h1>
+                    <div class="Products01">
+                        <img src="asset 41.png" alt="">
+                        <a href="#">P28 Foods Formulated...</a>
+                        <p>$20.00</p>
+                        <button>🛒CHOOSE VARIANT</button>
+                        <button>👁</button>
+                        <button>❤</button>
+                    </div>
+                    <div class="Products02">
+                        <img src="asset 43.png" alt="">
+                        <a href="#">Nabisco Mini W...<Nilla></Nilla></a>
+                        <p>$30.000</p>
+                        <button>🛒CHOOSE VARIANT</button>
+                        <button>👁</button>
+                        <button>❤</button>
+                    </div>
+                    <div class="Products03">
+                        <img src="asset 45.png" alt="">
+                        <a href="#">KIND Nuts & Spices, ...</a>
+                        <p>$12.00 - $30.00</p>
+                        <button>🛒CHOOSE VARIANT</button>
+                        <button>👁</button>
+                        <button>❤</button>
+                    </div>
+                    <div class="Products04">
+                        <img src="asset 47.png" alt="">
+                        <a href="#">Kashi Cereal Bar, Ri...</a>
+                        <p>$23.00</p>
+                        <button class="unbuy">🚫UNAVALABLE</button>
+                        <button>👁</button>
+                        <button>❤</button>
+                    </div>                
+            </div>
+        </div>
+        <div class="FeaturedPosts">
+            <div class="poststitle">
+                <h1>Featured Posts</h1>
+            </div>
+            <div class="blue">
+                <img src="asset 61.png" alt="">
+                <p>29 January</p>
+                <a href="#">12 Heavenly Fruits and Honey</a>
+                <p>Caffeine and sugar may give you an energy spike, but the crash that follows will leave you feeling even more tired than before. However, great...</p>
+            </div>
+            <div class="yellow">
+                <img src="asset 62.png" alt="">
+                <p>29 January</p>
+                <a href="#">The Great Start of Your Weight</a>
+                <p>Kids need energy for sports and play, so it’s important that they’re consuming a nutrient-dense snack about an hour before their activity that contains carbohydrates....</p>
+            </div>
+            <div class="green">
+                <img src="asset 63.png" alt="">
+                <p>29 January</p>
+                <a href="#">The Products that Help You Boost the Energy</a>
+                <p>Hello, my dears! My name is mary and here, in my blog, I want to share with you my findings and useful thoughts about making...</p>
+            </div>
+        </div>
+        <div class="Infor">
+            <div class="Information">
+                <h1>Information</h1>
+                <a href="#">Home</a><br><br>
+                <a href="#">Services</a><br><br>
+                <a href="#">Blog</a><br><br>
+                <a href="#">About Us</a><br><br>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="myacc">
+                <h1>My Account</h1>
+                <a href="#">My Account</a><br><br>
+                <a href="#">Order History</a><br><br>
+                <a href="#">Addresses</a><br><br>
+                <a href="#">Wishlist</a>
+            </div>
+            <div class="ourshop">
+                <h1>Our Shop</h1>
+                <p>Address<br>4578 Marmora St, San Francisco D04 89GR<br><br>Phone</p>
+                <a href="#">1-800-1234-567</a>
+            </div>
+            <div class="Newsletter">
+                <h1>Newsletter</h1>
+                <p>Join our mailing list
+                </p><br>
+                <input type="email" >
+            </div>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div class="last">
+            <h1>©Healtly Food . Powered by Shopify</h1>
+        </div>
+    </div>
+</body>
+</html>
